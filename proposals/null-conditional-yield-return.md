@@ -23,7 +23,7 @@ The grammar rule *yield_statement* is adjusted accordingly:
 ```diff
 yield_statement
 -   : attribute_list* 'yield' ('return' | 'break') expression? ';'
-+   : attribute_list* 'yield' ('return' '?'? | 'break') expression? ';'
++   : attribute_list* 'yield' ('return' | 'break') '?'? expression? ';'
     ;
 ```
 
