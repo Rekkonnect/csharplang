@@ -41,6 +41,14 @@ By the current design, `T` cannot be a (function) pointer type, since it's an in
 
 It is a compiler error to use `yield return?` on an expression whose type does not meet the above criteria.
 
+If the return type is `IEnumerable<R>` and the type of the returned expression is `T`, it is valid for `T` to be equal to `Nullable<R>`, since the value will only be returned if not null. For example,
+```csharp
+IEnumerable<int> Get(int? a)
+{
+    yield return? a; // valid
+}
+```
+
 ## Drawbacks
 [drawbacks]: #drawbacks
 
