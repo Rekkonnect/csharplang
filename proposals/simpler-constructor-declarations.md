@@ -41,6 +41,15 @@ public new() { }
 
 This works for all modifiers that a constructor accepts (see [unresolved questions](#static-constructors)).
 
+The grammar for the declaration of a constructor is modified to support the new syntax:
+
+```diff
+constructor_declaration
+- : attribute_list* modifier* identifier_token parameter_list constructor_initializer? (block | (arrow_expression_clause ';'))
++ : attribute_list* modifier* (identifier_token | 'new') parameter_list constructor_initializer? (block | (arrow_expression_clause ';'))
+  ;
+```
+
 ## Drawbacks
 [drawbacks]: #drawbacks
 
@@ -105,6 +114,8 @@ Following the same pattern as above, simplifying the syntax could result in the 
 Although the `~` symbol is notorious for its negation, `~new` still feels like an expression that could be boiled down to something more concise. Ideally, it should be a keyword that denotes destruction, whilst attempting to avoid creating a new one.
 
 A hardly satisfying idea that meets the criteria could be `finally`, which somewhat indicates a destructor, which is an object finalizer.
+
+Another keyword that could take place could be `out`, which is short, and conveys the meaning of disassociating with something. However, seeing it placed where a destructor should be, could appear confusing.
 
 ## Design meetings
 
