@@ -36,10 +36,40 @@ if (e is not null)
 The type of `e`, which we will refer to as `T`, must be a value that accepts the literal `null` value. This means that `T` must be one of the following types:
 - reference type
 - nullable value type (`Nullable<>`)
+- `dynamic`
 
 By the current design, `T` cannot be a (function) pointer type, since it's an invalid type argument type.
 
-It is a compiler error to use `yield return?` on an expression whose type does not meet the above criteria.
+It is a compiler error to use `yield return?` on an expression whose type does not meet the above criteria. For example,
+
+```csharp
+IEnumerable<int> Get()
+{
+    const int a = 1;
+
+    // All of the following expressions will emit the error
+    yield return? 1;
+    yield return? default;
+    yield return? a;
+}
+```
+
+It is a compiler warning for the expression `e` to have a constant value, with the reasoning being that constant values are known to be null or not, rendering usage of the `yield return?` redundant, redirecting the programmer to use the traditional `yield return` on the provided expression. For example,
+
+```csharp
+IEnumerable<object> Get()
+{
+    const string s = nameof(s);
+
+    // All of the following expressions will emit the warning
+    yield return? null;
+    yield return? default;
+    yield return? default(object);
+    yield return? "value";
+    yield return? "value" + s + "s";
+    yield return? $"value{s}";
+}
+```
 
 If the return type is `IEnumerable<R>` and the type of the returned expression is `T`, it is valid for `T` to be equal to `Nullable<R>`, since the value will only be returned if not null. For example,
 ```csharp
