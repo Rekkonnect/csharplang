@@ -1,7 +1,7 @@
 # Implementation Tracking
 
 - Null-conditional operators on pointers ([#398](https://github.com/dotnet/csharplang/issues/398), [#3619](https://github.com/dotnet/csharplang/issues/3619))
-  - [Prototype](https://github.com/AlFasGD/roslyn/tree/features/simpler-ctor) (completed)
+  - [Prototype](https://github.com/AlFasGD/roslyn/tree/conditional-access-pointers) (completed)
     - [x] `?->`
     - [x] `?[`
     - [x] `??`
