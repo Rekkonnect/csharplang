@@ -14,3 +14,8 @@
 - `yield return?` ([#5063](https://github.com/dotnet/csharplang/discussions/5063))
   - [Prototype](https://github.com/AlFasGD/roslyn/tree/conditional-yield-return) (completed)
   - [Spec](https://github.com/AlFasGD/csharplang/blob/conditional-yield-return-spec/proposals/null-conditional-yield-return.md) (started)
+
+## Pending
+
+- `async get`, `await get`, `async await` ([#4912](https://github.com/dotnet/csharplang/discussions/4912))
+- Null-conditional invocation operator ([#3257](https://github.com/dotnet/csharplang/issues/3257))
