@@ -19,3 +19,6 @@
 
 - `async get`, `await get`, `async await` ([#4912](https://github.com/dotnet/csharplang/discussions/4912))
 - Null-conditional invocation operator ([#3257](https://github.com/dotnet/csharplang/issues/3257))
+- `&&=` and `||=` assignment operators ([#1718](https://github.com/dotnet/csharplang/issues/1718))
+- Partial enums ([#2669](https://github.com/dotnet/csharplang/discussions/2669))
+- Cached properties ([#5180](https://github.com/dotnet/csharplang/discussions/5180))
