@@ -30,5 +30,5 @@
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
 
 - ***Importance*** refers to how impactful and desired a feature's implementation is, to its intended target users
-- ***Relevance*** refers to the size of the target user group, including noes that will use it due to its availability
+- ***Relevance*** refers to the size of the target user group, including ones that will use it due to its availability
 - ***Expected Difficulty*** refers to the difficulty of the implementations, including its estimated implementation time
