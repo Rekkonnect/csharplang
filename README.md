@@ -23,8 +23,8 @@
 | Null-conditional invocation operator | [#3257](https://github.com/dotnet/csharplang/issues/3257) | None | None | 2.55 | 8.30 | 4.98 |
 | `&&=` and `\|\|=` assignment operators | [#1718](https://github.com/dotnet/csharplang/issues/1718) | None | None | 1.06 | 3.76 | 1.27 |
 | Partial enums | [#2669](https://github.com/dotnet/csharplang/discussions/2669) | None | None | 0.97 | 0.12 | 1.65 |
-| Cached properties | [#5180](https://github.com/dotnet/csharplang/discussions/5180) | [In progress](https://github.com/AlFasGD/roslyn/tree/features/cached-properties) | [In progress](https://github.com/AlFasGD/csharplang/tree/init-get-property-accessor) | 1.48 | 3.38 | 2.14 |
-| `yield return` multiple expressions | [#5098](https://github.com/dotnet/csharplang/discussions/5098) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/yield-return-arglist) | Pending | 1.51 | 1.75 | 1.42 |
+| Cached properties | [#5180](https://github.com/dotnet/csharplang/discussions/5180) | [In progress](https://github.com/AlFasGD/roslyn/tree/features/cached-properties) | [Started](https://github.com/AlFasGD/csharplang/blob/init-get-property-accessor/proposals/cached-properties.md) | 1.48 | 3.38 | 2.14 |
+| `yield return` multiple expressions | [#5098](https://github.com/dotnet/csharplang/discussions/5098) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/yield-return-arglist) | [Started](https://github.com/AlFasGD/csharplang/blob/yield-return-exprlist/proposals/yield-return-expression-list.md) | 1.51 | 1.75 | 1.42 |
 | `yield return foreach` | [#378](https://github.com/dotnet/csharplang/discussions/378) | None | None | 1.33 | 2.54 | 1.71 |
 
 ### Metrics Legend
