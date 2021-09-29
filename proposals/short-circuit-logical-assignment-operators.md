@@ -50,12 +50,16 @@ As with any language feature, we must question whether the additional complexity
 The current alternatives are to use the non-compound version of the operators, as with other operators that support compound assignment:
 ```csharp
 // &&=
+if (a)
+    a = b;
+
+_ = a ? (a = b) : false;
+
+// ||=
 if (!a)
     a = b;
 
-// ||=
-if (a)
-    a = b;
+_ = a ? true : (a = b);
 ```
 
 Another solution is to use the non-short-circuiting versions of the operators that do support compound assignment, which could induce a high performance penalty in expensive operations:
