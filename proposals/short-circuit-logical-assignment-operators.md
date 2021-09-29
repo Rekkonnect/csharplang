@@ -27,7 +27,9 @@ assignment_expression
   ;
 ```
 
-Both the operators will be the equivalent of assigning the result of the short-circuiting logical operators. In the example:
+Both the operators will be the equivalent of assigning the result of the short-circuiting logical operators, only if the operation is fully executed. In other words, in `a &&= b`, if `a` is evaluated to `false`, nothing happens, otherwise `b` is evaluated, and its value is assigned to `a`. Similarly for `||=`, no further operation will occur if `a` is evaluated to `true`.
+
+In the example:
 ```csharp
 a = false;
 a &&= ExpensiveOperation();
@@ -47,8 +49,13 @@ As with any language feature, we must question whether the additional complexity
 
 The current alternatives are to use the non-compound version of the operators, as with other operators that support compound assignment:
 ```csharp
-a = a && b;
-a = a || b;
+// &&=
+if (!a)
+    a = b;
+
+// ||=
+if (a)
+    a = b;
 ```
 
 Another solution is to use the non-short-circuiting versions of the operators that do support compound assignment, which could induce a high performance penalty in expensive operations:
