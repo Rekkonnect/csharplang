@@ -60,8 +60,36 @@ a ? ((b)?(c)) : d
 These kinds of expressions will require extra checking on the parser's end to ensure lack of ambiguity. In the case of ambiguity, a respective compiler error is emitted to hint the user to further (un-)parenthesize expressions appropriately to resolve the syntax. Trivia will **not** be taken into account for ambiguity resolution.
 
 The general rule of causing an ambiguity is:<br/>
-Unequal presence of opening parentheses after `?`, and `:` in nested expression.<br/>
-In other words, if `nullConditionalInvocations = presences["?("] - presences[":"]` is not 0, ambiguity exists.
+Consider the span S of the expression, defined as the span between the first occurrence of a `?(`, and following all subsequent `:` without encoutering a `?(`, picking the last one. In other words, it is the match of the pseudo-regex:
+```
+open = ?\w*(
+(?'openings'open(^\:)*)+(?'closings'(^open)*\:)+
+```
+Ambiguity is recognized if the number of captures of `openings` and `closings` are not equal.
+
+Here are some examples regrading ambiguity recognition:
+```csharp
+// Not ambiguous
+a?(b)?(c)
+(a?(b))?(c)
+
+// Ambiguous
+a?(b)?(c):d
+
+// Ambiguous
+a?(b)?(c):d?(e)
+
+// Not ambiguous
+a?(b)?(c):d:e
+a ? (b ? c : d) : e
+
+// Ambiguous
+a?(b):c?(d)?(e):f
+
+// Not ambiguous
+a?(b):c?(d):e
+a ? b : (c ? d : e)
+```
 
 ## Drawbacks
 [drawbacks]: #drawbacks
