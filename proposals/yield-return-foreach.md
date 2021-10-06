@@ -30,11 +30,17 @@ foreach (var value in values)
     yield return value;
 ```
 
-The `yield return foreach` statement may only be applied on an object of type `IEnumerable<T>`, or `dynamic`. In the case of `dynamic`:
-- if the runtime type of the object is `IEnumerable<T>`, the operation will be successfully performed, by iterating through the object's contents and yield returning every iterated instance of it
-- otherwise, a runtime error occurs
+The statement `yield return foreach expr;`, where `expr` is the expression whose iterated elements to yield return, is valid only under the following constraints:
 
-Assuming that the iterated enumerable contains elements of type `T`, and the returned element type is `R`, the same type conversion rules apply for `T` into `R`.
+Assume `E`, the type of the expression, and `R` the return element type of the method.
+
+- If `E` is `dynamic`:
+  - if the runtime type of the object is `IEnumerable<T>`, the operation will be successfully performed, by iterating through the object's contents and yield returning every iterated instance of it.
+  - otherwise, a runtime error occurs.
+- Otherwise, `E` must be convertible to a type `IEnumerable<T>`, where `T` is any type, which should also be convertible to type `R`. Type contravariance is preserved from this property, and extended to support direct implicit type conversion.
+- Otherwise, `E` must expose a `GetEnumerator()` method, or have an applicable extension method under the given signature. The method should return `IEnumerator<T>`, with `T` being convertible to `R`.
+
+It is a compiler error if `E` is a non-`dynamic` type and does not meet the above criteria.
 
 ## Drawbacks
 
