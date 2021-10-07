@@ -30,16 +30,7 @@ foreach (var value in values)
     yield return value;
 ```
 
-The statement `yield return foreach expr;`, where `expr` is the expression whose iterated elements to yield return, is valid only under the following constraints:
-
-Assume `E`, the type of the expression, and `R` the return element type of the method.
-
-- If `E` is `dynamic`:
-  - if the runtime type of the expression exposes a `GetEnumerator()` method, returning `IEnumerator<T>`, where `T` is any type, and convertible to `R`, the operation will be successfully performed, by enumerating the result and yield returning every converted enumerated instance.
-  - otherwise, a runtime error occurs.
-- Otherwise, `E` must be convertible into a type that exposes a `GetEnumerator()` method, or have an applicable extension method under the given signature. The method should return `IEnumerator<T>`, with `T` being convertible to `R`.
-
-It is a compiler error if `E` is a non-`dynamic` type and does not meet the above criteria.
+The statement `yield return foreach expr;`, where `expr` is the expression whose iterated elements to yield return, is only valid if the equivalent `foreach` statement can be valid. This excludes `ref`-type elements in the enumerable expression, since `ref` types are not valid type arguments. It is a compiler error if any of the constraints are not met.
 
 ## Drawbacks
 
