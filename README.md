@@ -15,8 +15,8 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | `yield return` multiple expressions | [#5098](https://github.com/dotnet/csharplang/discussions/5098) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/yield-return-arglist) | [Started](https://github.com/AlFasGD/csharplang/blob/yield-return-exprlist/proposals/yield-return-expression-list.md) | 1.51 | 1.75 | 1.42 |
 | `yield return foreach` | [#378](https://github.com/dotnet/csharplang/discussions/378) | None | [Started](https://github.com/AlFasGD/csharplang/blob/yield-return-foreach/proposals/yield-return-foreach.md) | 1.33 | 2.54 | 1.71 |
 | Labelled loops | [#1597](https://github.com/dotnet/csharplang/issues/1597) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/labelled-loops) | [Started](https://github.com/AlFasGD/csharplang/blob/labelled-loops/proposals/labelled-loops.md) | 1.73 | 2.28 | 1.97 |
-| `typeof(this)`<br/>`sizeof(this)`<br/>`nameof(this)` | [#5261](https://github.com/dotnet/csharplang/discussions/5261) | None | None | 1.11 | 3.65 | 1.50 |
-| Unmanaged struct declaration | [#2036](https://github.com/dotnet/csharplang/discussions/2036) | None | None | 1.37 | 1.54 | 1.78 |
+| `typeof(this)`<br/>`sizeof(this)`<br/>`nameof(this)` | [#5261](https://github.com/dotnet/csharplang/discussions/5261) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/this-type-operator-argument) | [Started](https://github.com/AlFasGD/csharplang/blob/this-type-operator-arguments/proposals/this-type-operator-arguments.md) | 1.11 | 3.65 | 1.50 |
+| Unmanaged struct declaration | [#2036](https://github.com/dotnet/csharplang/discussions/2036) | None | [Started](https://github.com/AlFasGD/csharplang/blob/unmanaged-struct-declarations/proposals/unmanaged-struct-declarations.md) | 1.37 | 1.54 | 1.78 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
