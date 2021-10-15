@@ -14,7 +14,7 @@ The syntax for supporting this feature requires allowing `unmanaged` as a declar
 
 <!-- TODO: Add grammar modification -->
 
-When a struct is declared `unmanaged`, any contained fields or auto-properties whose types are not unmanaged will report a compiler error. This modifier specifically requires that all contained fields and auto-properties are of unmanaged types.
+When a struct is declared `unmanaged`, any contained fields or auto-properties whose types are not unmanaged will report a compiler error. This modifier specifically requires that all contained fields and auto-properties are of unmanaged types. Moreover, unmanaged structs cannot contain field-like events, and a specific error will be reported on declaration of such events.
 
 Additionally, when a struct type declared with the `unmanaged` modifier is used as a type argument with the `unmanaged` constraint, or in context where an unmanaged struct is requested, it is considered valid without caring about its composition. Errors will be reported at the evaluation of the contained members, and in context outside of that, the struct is defined as unmanaged.
 
@@ -47,11 +47,15 @@ class Program
 }
 ```
 
+The feature is also available for record structs, as they can also be considered unmanaged if declared with valid unmanaged fields. Here is an example valid unmanaged record struct declaration:
+```csharp
+public unmanaged record struct Point(int X, int Y);
+```
+
 ## Drawbacks
 
 As the proposal is targeted for users that already have hands-on experience with unmanaged structs, the additional minor complexity is not a concern, considered the benefits of using it.
 
 ## Unresolved questions
 
-- [ ] Will `record struct` types support being declared with the `unmanaged` modifier?
 - [ ] Requires LDM review
