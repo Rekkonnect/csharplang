@@ -18,6 +18,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | `typeof(this)`<br/>`sizeof(this)`<br/>`nameof(this)` | [#5261](https://github.com/dotnet/csharplang/discussions/5261) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/this-type-operator-argument) | [Started](https://github.com/AlFasGD/csharplang/blob/this-type-operator-arguments/proposals/this-type-operator-arguments.md) | 1.11 | 3.65 | 1.50 |
 | Unmanaged struct declaration | [#2036](https://github.com/dotnet/csharplang/discussions/2036) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/unmanaged-struct-declarations) | [Started](https://github.com/AlFasGD/csharplang/blob/unmanaged-struct-declarations/proposals/unmanaged-struct-declarations.md) | 1.37 | 1.54 | 1.78 |
 | Partial properties | [#3412](https://github.com/dotnet/csharplang/discussions/3412) | None | None | 1.78 | 0.56 | 2.02 |
+| `unsafe namespace` | [#5343](https://github.com/dotnet/csharplang/discussions/5343) | None | None | 1.23 | 2.89 | 0.84 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
