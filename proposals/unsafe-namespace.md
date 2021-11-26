@@ -1,4 +1,4 @@
-# Partial property declarations
+# Unsafe namespace
 
 ## Summary
 
