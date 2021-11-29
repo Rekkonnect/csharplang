@@ -17,10 +17,10 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Labelled loops | [#1597](https://github.com/dotnet/csharplang/issues/1597) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/labelled-loops) | [Started](https://github.com/AlFasGD/csharplang/blob/labelled-loops/proposals/labelled-loops.md) | 1.73 | 2.28 | 1.97 |
 | `typeof(this)`<br/>`sizeof(this)`<br/>`nameof(this)` | [#5261](https://github.com/dotnet/csharplang/discussions/5261) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/this-type-operator-argument) | [Started](https://github.com/AlFasGD/csharplang/blob/this-type-operator-arguments/proposals/this-type-operator-arguments.md) | 1.11 | 3.65 | 1.50 |
 | Unmanaged struct declaration | [#2036](https://github.com/dotnet/csharplang/discussions/2036) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/unmanaged-struct-declarations) | [Started](https://github.com/AlFasGD/csharplang/blob/unmanaged-struct-declarations/proposals/unmanaged-struct-declarations.md) | 1.37 | 1.54 | 1.78 |
-| Partial properties | [#3412](https://github.com/dotnet/csharplang/discussions/3412) | None | None | 1.78 | 0.56 | 2.02 |
-| `unsafe namespace` | [#5343](https://github.com/dotnet/csharplang/discussions/5343) | None | None | 1.23 | 2.89 | 0.84 |
-| Memberwise operators for tuples | [#5154](https://github.com/dotnet/csharplang/discussions/5154) | None | None | 2.29 | 4.16 | 1.90 |
-| Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | None | 2.78 | 5.31 | 1.63 |
+| Partial properties | [#3412](https://github.com/dotnet/csharplang/discussions/3412) | None | [Started](https://github.com/AlFasGD/csharplang/blob/parial-properties/proposals/partial-properties.md) | 1.78 | 0.56 | 2.02 |
+| `unsafe namespace` | [#5343](https://github.com/dotnet/csharplang/discussions/5343) | [Started](https://github.com/AlFasGD/roslyn/tree/features/unsafe-namespace) | [Started](https://github.com/AlFasGD/csharplang/blob/unsafe-namespace/proposals/unsafe-namespace.md) | 1.23 | 2.89 | 0.84 |
+| Memberwise operators for tuples | [#5154](https://github.com/dotnet/csharplang/discussions/5154) | None | [Started](https://github.com/AlFasGD/csharplang/blob/memberwise-tuple-operators/proposals/memberwise-tuple-operators.md) | 2.29 | 4.16 | 1.90 |
+| Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | [Started](https://github.com/AlFasGD/csharplang/blob/ref-assignment-switch-expressions/proposals/ref-assignment-switch-expressions.md) | 2.78 | 5.31 | 1.63 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
