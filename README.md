@@ -21,6 +21,9 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | `unsafe namespace` | [#5343](https://github.com/dotnet/csharplang/discussions/5343) | [Started](https://github.com/AlFasGD/roslyn/tree/features/unsafe-namespace) | [Started](https://github.com/AlFasGD/csharplang/blob/unsafe-namespace/proposals/unsafe-namespace.md) | 1.23 | 2.89 | 0.84 |
 | Memberwise operators for tuples | [#5154](https://github.com/dotnet/csharplang/discussions/5154) | None | [Started](https://github.com/AlFasGD/csharplang/blob/memberwise-tuple-operators/proposals/memberwise-tuple-operators.md) | 2.29 | 4.16 | 1.90 |
 | Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | [Started](https://github.com/AlFasGD/csharplang/blob/ref-assignment-switch-expressions/proposals/ref-assignment-switch-expressions.md) | 2.78 | 5.31 | 1.63 |
+| `is` pattern matching for type parameters | [#5565](https://github.com/dotnet/csharplang/discussions/5565) | None | None | 1.66 | 4.95 | 3.51 |
+
+
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
