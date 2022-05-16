@@ -23,6 +23,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | [Started](https://github.com/AlFasGD/csharplang/blob/ref-assignment-switch-expressions/proposals/ref-assignment-switch-expressions.md) | 2.78 | 5.31 | 1.63 |
 | Type parameter pattern matching | [#5565](https://github.com/dotnet/csharplang/discussions/5565) | None | [Started](https://github.com/AlFasGD/csharplang/tree/type-parameter-pattern-matching) | 1.66 | 4.95 | 3.51 |
 | Omitting `Attribute` suffix in type arguments | [#5675](https://github.com/dotnet/csharplang/discussions/5675) | None | None | 1.80 | 2.34 | 1.02 |
+| Simplified `base` call in override | [#5868](https://github.com/dotnet/csharplang/discussions/5868) | None | None | 1.16 | 3.65 | 1.74 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
