@@ -28,6 +28,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Improve overload resolution for delegate compatibility | [#3277](https://github.com/dotnet/csharplang/issues/3277) | None | None | 3.89 | 4.61 | 1.79 |
 | Deconstruction in `from` and `let` | [#189](https://github.com/dotnet/csharplang/issues/189) | None | None | 4.72 | 4.36 | 1.53 |
 | Relax restriction of pointer extension methods | [#5367](https://github.com/dotnet/csharplang/discussions/5367) | None | None | 1.23 | 1.07 | 2.28 |
+| `#pragma warning disable once` | [#1070](https://github.com/dotnet/csharplang/discussions/1070) | None | None | 1.15 | 2.46 | 0.94 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
