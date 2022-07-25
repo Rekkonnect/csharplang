@@ -24,11 +24,12 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Type parameter pattern matching | [#5565](https://github.com/dotnet/csharplang/discussions/5565) | None | [Started](https://github.com/AlFasGD/csharplang/tree/type-parameter-pattern-matching) | 1.66 | 4.95 | 3.51 |
 | Omitting `Attribute` suffix in type arguments | [#5675](https://github.com/dotnet/csharplang/discussions/5675) | None | None | 1.80 | 2.34 | 1.02 |
 | Simplified `base` call in override | [#5868](https://github.com/dotnet/csharplang/discussions/5868) | None | None | 1.16 | 3.65 | 1.74 |
-| Allow 'default' in deconstruction | [#1394](https://github.com/dotnet/csharplang/issues/1394) | None | None | 1.45 | 2.07 | 1.67 |
+| Allow `default` in deconstruction | [#1394](https://github.com/dotnet/csharplang/issues/1394) | None | [For Review](https://github.com/dotnet/roslyn/pull/62896) | 1.45 | 2.07 | 1.67 |
 | Improve overload resolution for delegate compatibility | [#3277](https://github.com/dotnet/csharplang/issues/3277) | None | None | 3.89 | 4.61 | 1.79 |
 | Deconstruction in `from` and `let` | [#189](https://github.com/dotnet/csharplang/issues/189) | None | None | 4.72 | 4.36 | 1.53 |
 | Relax restriction of pointer extension methods | [#5367](https://github.com/dotnet/csharplang/discussions/5367) | None | None | 1.23 | 1.07 | 2.28 |
 | `#pragma warning disable once` | [#1070](https://github.com/dotnet/csharplang/discussions/1070) | None | None | 1.15 | 2.46 | 0.94 |
+| Using nested types inside primary ctor | [#6286](https://github.com/dotnet/csharplang/discussions/6286) | None | None | 0.60 | 1.32 | 0.88 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
