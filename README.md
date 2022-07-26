@@ -2,8 +2,8 @@
 
 The features are (mostly) ordered by discovery date, and partly grouped by relevance. There is no fixed implementation order schedule.
 
-| Feature Description | Issue(s) | Prototype | Spec | Importance | Relevance | Expected Difficulty |
-|---------------------|----------|:---------:|:----:|:----------:|:---------:|:-------------------:|
+| Feature Description | Issue(s) | Prototype | Spec | Importance | Relevance | Difficulty |
+|---------------------|----------|:---------:|:----:|:----------:|:---------:|:----------:|
 | Null-conditional operators on pointers | [#398](https://github.com/dotnet/csharplang/issues/398)<br/>[#3619](https://github.com/dotnet/csharplang/issues/3619) | [Completed](https://github.com/AlFasGD/roslyn/tree/conditional-access-pointers) | [Started](https://github.com/AlFasGD/csharplang/blob/conditional-access-pointers-spec/proposals/pointer-conditional-member-access.md) | 2.44 | 2.67 | 2.80 |
 | Simplified ctor declaration | [#1928](https://github.com/dotnet/csharplang/discussions/1928) | [Completed](https://github.com/AlFasGD/roslyn/tree/features/simpler-ctor) | [Started](https://github.com/AlFasGD/csharplang/blob/simpler-ctor-spec/proposals/simpler-constructor-declarations.md) | 2.02 | 10.78 | 1.15 |
 | `async get`, `await get`, `async await` | [#4912](https://github.com/dotnet/csharplang/discussions/4912) | None | [Started](https://github.com/AlFasGD/csharplang/blob/async-syntax-improvements/proposals/async-syntax-improvements.md) | 0.64 | 1.17 | 5.32 |
@@ -36,4 +36,4 @@ All metric values are based on an exponential (base 1.5) score, and are uncapped
 
 - ***Importance*** refers to how impactful and desired a feature's implementation is, to its intended target users
 - ***Relevance*** refers to the size of the target user group, including ones that will use it due to its availability
-- ***Expected Difficulty*** refers to the difficulty of the implementations, including its estimated implementation time
+- ***Difficulty*** refers to the expected difficulty of the implementations, including its estimated implementation time
