@@ -32,7 +32,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Using nested types inside primary ctor | [#6286](https://github.com/dotnet/csharplang/discussions/6286) | None | None | 0.60 | 1.32 | 0.88 |
 
 ### Metrics Legend
-All metric values are based on an exponential (base 1.5) score, and are uncapped. Bases are estimated considering existing language features, normalized such that the average metric value is 6.40 for existing language features.
+All metric values are based on an exponential (base 1.5) score, and are uncapped. Scores are estimated considering existing language features, normalized such that the median metric value is 6.40 for existing major language features (records, `init`, etc.).
 
 - ***Importance*** refers to how impactful and desired a feature's implementation is, to its intended target users
 - ***Relevance*** refers to the size of the target user group, including ones that will use it due to its availability
