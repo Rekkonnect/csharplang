@@ -20,7 +20,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Partial properties | [#3412](https://github.com/dotnet/csharplang/discussions/3412) | TBD | [Started](https://github.com/Rekkonnect/csharplang/blob/parial-properties/proposals/partial-properties.md) | 1.78 | 0.56 | 2.02 |
 | `unsafe namespace` | [#5343](https://github.com/dotnet/csharplang/discussions/5343) | [Started](https://github.com/Rekkonnect/roslyn/tree/features/unsafe-namespace) | [Started](https://github.com/Rekkonnect/csharplang/blob/unsafe-namespace/proposals/unsafe-namespace.md) | 1.23 | 2.89 | 0.84 |
 | Memberwise operators for tuples | [#5154](https://github.com/dotnet/csharplang/discussions/5154) | None | [Started](https://github.com/Rekkonnect/csharplang/blob/memberwise-tuple-operators/proposals/memberwise-tuple-operators.md) | 2.29 | 4.16 | 1.90 |
-| Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | [Started](https://github.com/Rekkonnect/csharplang/blob/ref-assignment-switch-expressions/proposals/ref-assignment-switch-expressions.md) | 2.78 | 5.31 | 1.63 |
+| Ref assignment for switch expressions | [#3326](https://github.com/dotnet/csharplang/issues/3326) | None | [Proposed](https://github.com/dotnet/csharplang/pull/7352) | 2.78 | 5.31 | 1.63 |
 | Type parameter pattern matching | [#5565](https://github.com/dotnet/csharplang/discussions/5565) | None | [Started](https://github.com/Rekkonnect/csharplang/blob/type-parameter-pattern-matching/proposals/type-param-pattern-matching.md) | 1.66 | 4.95 | 3.51 |
 | Omitting `Attribute` suffix in type arguments | [#5675](https://github.com/dotnet/csharplang/discussions/5675) | None | None | 1.80 | 2.34 | 1.02 |
 | Simplified `base` call in override | [#5868](https://github.com/dotnet/csharplang/discussions/5868) | None | None | 1.16 | 3.65 | 1.74 |
@@ -30,6 +30,7 @@ The features are (mostly) ordered by discovery date, and partly grouped by relev
 | Relax restriction of pointer extension methods | [#5367](https://github.com/dotnet/csharplang/discussions/5367) | None | None | 1.23 | 1.07 | 2.28 |
 | `#pragma warning disable once` | [#1070](https://github.com/dotnet/csharplang/discussions/1070) | None | None | 1.15 | 2.46 | 0.94 |
 | Using nested types inside primary ctor | [#6286](https://github.com/dotnet/csharplang/discussions/6286) | None | None | 0.60 | 1.32 | 0.88 |
+| Declaration of `in`/`ref`/`out` parameters in lambdas without type name | [#338](https://github.com/dotnet/csharplang/issues/338) | None | [Proposed](https://github.com/dotnet/csharplang/pull/7369) | 2.72 | 2.20 | 1.14 |
 
 ### Metrics Legend
 All metric values are based on an exponential (base 1.5) score, and are uncapped. Scores are estimated considering existing language features, normalized such that the median metric value is 6.40 for existing major language features (records, `init`, etc.).
